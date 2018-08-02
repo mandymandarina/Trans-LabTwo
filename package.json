@@ -1,7 +1,7 @@
 {
   "name": "trans-labtwo",
   "version": "1.0.0",
-  "description": "Nueva version trans-lab\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[n\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "description": "Nueva version trans-lab",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -10,6 +10,10 @@
     "validador",
     "bip"
   ],
-  "author": "miarnda naranjo",
-  "license": "ISC"
+  "author": "miranda naranjo",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
 }
