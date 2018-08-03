@@ -17,7 +17,7 @@ span,h4{
   color: #f6a800;
 }
 
-.btnLogin {  
+.btn-secondary {  
   width: 10em;
   margin:0;
   background-color: #f6a800;
@@ -30,7 +30,7 @@ span,h4{
  /* fin css login */
 
  /* css secion menú */
- .btn-primary {  
+.btn-primary{
   width: 100em;
   margin:1em;
   background-color: #f6a800;
@@ -38,12 +38,18 @@ span,h4{
   text-align: center;    
   border-radius: 0;
 }
+
+ 
 #seccionMenu{
   display: none;
+  background-color: #dddee0;
 }
 /* fin css seccion menú */
 
 /* css seccion perfil */
+#seccionPerfil{
+  background-color: #dddee0;
+}
 .cabeza{
   background-color: #f6a800;
 }
@@ -52,6 +58,20 @@ img {
   text-align: center;
 }
 
+.inPer {
+  width: 40em;
+  margin:1em;
+  text-align: center; 
+}
+
+.btn-terciary {  
+  width: 40em;
+  margin:1em;
+  background-color: #f6a800;
+  border:  #f6a800; 
+  text-align: center;    
+  border-radius: 0;
+}
 .secciondemierda { 
  background-color: #dddee0; 
 }
@@ -61,11 +81,28 @@ input {
   text-align: center;
   margin: 2em;
 }
-
 #seccionPerfil{
   display: none;
 }
-
 /* fin css seccion perfil */
+
+/* css seccion ver saldo */
+
+.muroCard {
+  background-color: #dddee0;
+}
+#seccionCard {
+  display: none;
+  background-color: #dddee0;
+}
+.botonVerSaldo{
+  width: 20em;
+  margin:1em;
+  background-color: #f6a800;
+  border:  #f6a800; 
+  text-align: center;    
+  border-radius: 0;
+}
+/* fin css seccion ver saldo */
 
 

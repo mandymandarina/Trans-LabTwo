@@ -9,6 +9,7 @@ btnLogin.addEventListener('click', () => {
 });
 
 // seccion menu y perfil
+
 const btnPerfil = document.getElementById('threebPerfil');
 const paperBotons = document.getElementById('botonesMenu');
 const paperPerfil = document.getElementById('seccionPerfil')
@@ -18,27 +19,13 @@ btnPerfil.addEventListener('click', () => {
   paperBotons.style.display = 'none';  
 });
 
-// Login con mail y password
+// seccion menu y ver saldo
 
-btnLogin.addEventListener('click', () => {
-  const email = document.getElementById('inputEmail').value;
-  const password = document.getElementById('inputPassword').value;
-  firebase.auth().signInWithEmailAndPassword(email, password)
+const btnVerSaldo = document.getElementById('firstbSaldo');
+const paperBot = document.getElementById('botonesMenu');
+const paperCard = document.getElementById('seccionCard')
 
-    .catch((error) => {
-      const inputEmailUser = document.getElementById('inputEmail');
-      inputEmailUser.value = '';
-      const inputPasswordUser = document.getElementById('inputPassword');
-      inputPasswordUser.value = '';
-      const alertLogin = document.getElementById('alertPassword');
-      const msjErrorFirebase = error.message;
-      if (msjErrorFirebase === 'The email address is badly formatted.') {
-        alertLogin.innerHTML = '<div class="alert alert-danger alertConteiner" role="alert"> Error: Por favor ingresa un correo eléctronico válido</div>';
-      } else if (msjErrorFirebase === 'The password is invalid or the user does not have a password.') {
-        alertLogin.innerHTML = '<div class="alert alert-danger alertConteiner" role="alert"> Error: Password Invalido, Ingrese un password de 6 o más caracteres </div>';
-      }
-      console.log('Error de Firebase > ' + error.code);
-      console.log('Error de Firebase > mensaje' + error.message);
-    });
-}); 
-// fin evento click del boton login normal
+btnVerSaldo.addEventListener('click', () => {
+  paperCard.style.display = 'block';
+  paperBot.style.display = 'none';  
+});

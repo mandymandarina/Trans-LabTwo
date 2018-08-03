@@ -35,14 +35,14 @@
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Correo electronico">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico" value="">
 
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1"></label>
         <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" value="">
       </div>
-      <button type="button" class="btnLogin" onkeypress="return isNumberKey()" id="botonLogin">Iniciar sesión</button>
+      <button type="button" class="btn btn-secondary" onclick="login()" id="botonLogin">Iniciar sesión</button>
       <div class="alertConteiner" id="alertPassword"></div>
     </form>
     <!-- comentario de olvidar contraseña -->
@@ -115,7 +115,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12"></div>
-          <button type="button" class="btn btn-primary" id="firstb">VER SALDO</button>
+          <button type="button" class="btn btn-primary" id="firstbSaldo">VER SALDO</button>
           <button type="button" class="btn btn-primary" id="secondb">CALCULAR TARIFA</button>
           <button type="button" class="btn btn-primary" id="threebPerfil">PERFIL</button>
           <button type="button" class="btn btn-primary" id="fourb">PREGUNTAS FRECUENTES</button>
@@ -140,12 +140,13 @@
       <secction class="secciondemierda">
         <div class="row">
           <div class="col-sm-12">
-            <input type="text">
-            <button type="button" class="btn btn-primary" id="firstb">AGREGAR TARJETA</button>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input type="text" class="inPer">
+            <input type="text" class="inPer">
+            <button type="button" class="btn btn-terciary" id="firstbCard">AGREGAR TARJETA</button>
+            <input type="text" class="inPer">
+            <input type="text" class="inPer">
+            <input type="text" class="inPer">
+            <input type="text" class="inPer">
 
           </div>
         </div>
@@ -153,22 +154,39 @@
     </section>
   </section>
   <!-- fin seccion perfil -->
+   
+  <!-- seccion ver saldo-->
+  <section id="seccionCard" class="muroCard">
+    <div>
+  <input type="text" class="form-control" id="inputTarjeta" placeholder="Numero tarjeta" value="">
+  <div class="input-group mb-3">      
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Choose your option</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <button type="button" class="botonVerSaldo" id="botonVer">VER SALDO</button>
+  </div>
+  </section>
+  <!-- fin seccion ver saldo -->
 
-  <!-- vinculo firebase -->
 
-  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyAEQHZNdaH57Z1UXOomddbbxhxbfRubN1c",
-      authDomain: "trans-lab-a8a00.firebaseapp.com",
-      databaseURL: "https://trans-lab-a8a00.firebaseio.com",
-      projectId: "trans-lab-a8a00",
-      storageBucket: "trans-lab-a8a00.appspot.com",
-      messagingSenderId: "1087920020259"
-    };
-    firebase.initializeApp(config);
-  </script>
+  <!-- vinculo firebase -->  
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAEQHZNdaH57Z1UXOomddbbxhxbfRubN1c",
+    authDomain: "trans-lab-a8a00.firebaseapp.com",
+    databaseURL: "https://trans-lab-a8a00.firebaseio.com",
+    projectId: "trans-lab-a8a00",
+    storageBucket: "trans-lab-a8a00.appspot.com",
+    messagingSenderId: "1087920020259"
+  };
+  firebase.initializeApp(config);
+</script>
 <!-- vinculo jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
