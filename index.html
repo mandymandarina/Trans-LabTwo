@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,57 +9,126 @@
   <!-- link de icono parte superior de pestaña -->
   <link rel="icon" type="image/jpg" href="img/imagen.png" />
   <!-- link de fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <!-- link de bootstraps -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
-  <header>
-    <!-- comienzo de container -->
-    <div class ="container-fluid">
-      <div class="row">
-        <!-- inicio de columnas -->
-        <div class="col-sm-12">
-        <div class="logo">
-          <img id="imagen" src="img/imagen.png" alt="logo de TransLab">
-          <h4>TRANS-LAB</h4>
-          </div>       
-   </header>
-         <!-- aqui login -->
-         <section id="sectionLogin">
-         <form>
-             <div class="form-group">
-               <label for="exampleInputEmail1"></label>               
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
-                           
-             </div>
-             <div class="form-group">
-               <label for="exampleInputPassword1"></label>
-               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"  value="">
-             </div>
-             <a href="home.html">
-             <button type="submit"  class="btn btn-primary" onkeypress="return isNumberKey()" id="boton" >Iniciar sesión</button> 
-           </a>        
-           </form>
-           <!-- comentario de olvidar contraseña -->
-           <p id="fpass">Olvidaste tu contaseña</p>
-           <!-- fin de login -->
-        </div>
-        </div>
-        <!-- fin de columnas -->
+  <section id="sectionLogin">
+    <header>
+      <!-- comienzo de container -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- inicio de columnas -->
+          <div class="col-sm-12">
+            <div class="logo">
+              <img id="imagen" src="img/imagen.png" alt="logo de TransLab">
+              <h4>TRANS-LAB</h4>
+            </div>
+    </header>
+    <!-- aqui login -->
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
+
       </div>
-      <footer>
-        <h5>¿NO TIENES CUENTA? <span>REGISTRATE</span></h5>
-      </footer>
+      <div class="form-group">
+        <label for="exampleInputPassword1"></label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" value="">
+      </div>      
+        <button type="button" class="btnLogin" onkeypress="return isNumberKey()" id="botonLogin">Iniciar sesión</button>  
+    </form>
+    <!-- comentario de olvidar contraseña -->
+    <p id="fpass">Olvidaste tu contaseña</p>
+    <!-- fin de login -->
     </div>
-   </div> 
-  </section>  
-<!-- fin de seccion login -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="src/js/main.js" ></script>
-<script src="src/js/data.js"></script> 
+    </div>
+    <!-- fin de columnas -->
+    </div>
+    <footer>
+      <h5>¿NO TIENES CUENTA?
+        <span>REGISTRATE</span>
+      </h5>
+    </footer>
+    </div>
+    </div>
+  </section>
+  <!-- fin de seccion login -->
+
+  <!-- seccion menú -->
+  <secction id="seccionMenu">
+    <!-- comienzo container -->
+    <div class="container-fluid">
+      <!-- comienzo row -->
+      <div class="row">
+        <!-- fin de row -->
+        <div class="col-sm 6">
+          <!-- comienzo menu -->
+          <!-- <nav> menu nav comentado por si acaso -->
+          <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-dollar-sign"></i> Ver saldo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-calculator"></i> Calcular Tarifa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-user-alt"></i> Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-file-alt"></i> Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-arrow-right"></i> Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- fin container -->
+    </div>
+    <!-- segundo container botones -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12"></div>
+        <button type="button" class="btn btn-primary" id="firstb">VER SALDO</button>
+        <button type="button" class="btn btn-primary" id="secondb">CALCULAR TARIFA</button>
+        <button type="button" class="btn btn-primary" id="threeb">PERFIL</button>
+        <button type="button" class="btn btn-primary" id="fourb">PREGUNTAS FRECUENTES</button>
+      </div>
+    </div>
+  </secction>
+  <!-- fin seccion menú -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/data.js"></script>
 </body>
+
 </html>

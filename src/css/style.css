@@ -7,8 +7,7 @@ body {
   padding: 10px;
 }
 
-#imagen {
-  display: block;
+#imagen {  
   margin-left: auto;
   margin-right: auto;
   width: 40%;
@@ -18,8 +17,7 @@ span,h4{
   color: #f6a800;
 }
 
-.btn {
-  display: inline-block;
+.btnLogin {  
   width: 10em;
   margin:0;
   background-color: #f6a800;
@@ -31,4 +29,16 @@ span,h4{
  }
  /* fin css login */
 
- 
+ /* css secion menú */
+ .btn-primary {  
+  width: 100em;
+  margin:1em;
+  background-color: #f6a800;
+  border:  #f6a800; 
+  text-align: center;    
+  border-radius: 0;
+}
+#seccionMenu{
+  display: none;
+}
+/* fin css seccion menú */
