@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,8 +41,8 @@
       <div class="form-group">
         <label for="exampleInputPassword1"></label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" value="">
-      </div>      
-        <button type="button" class="btnLogin" onkeypress="return isNumberKey()" id="botonLogin">Iniciar sesión</button>  
+      </div>
+      <button type="button" class="btnLogin" onkeypress="return isNumberKey()" id="botonLogin">Iniciar sesión</button>
     </form>
     <!-- comentario de olvidar contraseña -->
     <p id="fpass">Olvidaste tu contaseña</p>
@@ -108,18 +109,49 @@
       </div>
       <!-- fin container -->
     </div>
-    <!-- segundo container botones -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12"></div>
-        <button type="button" class="btn btn-primary" id="firstb">VER SALDO</button>
-        <button type="button" class="btn btn-primary" id="secondb">CALCULAR TARIFA</button>
-        <button type="button" class="btn btn-primary" id="threeb">PERFIL</button>
-        <button type="button" class="btn btn-primary" id="fourb">PREGUNTAS FRECUENTES</button>
+    <seccion id="botonesMenu">
+      <!-- segundo container botones -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12"></div>
+          <button type="button" class="btn btn-primary" id="firstb">VER SALDO</button>
+          <button type="button" class="btn btn-primary" id="secondb">CALCULAR TARIFA</button>
+          <button type="button" class="btn btn-primary" id="threebPerfil">PERFIL</button>
+          <button type="button" class="btn btn-primary" id="fourb">PREGUNTAS FRECUENTES</button>
+        </div>
       </div>
-    </div>
   </secction>
+  </seccion>
   <!-- fin seccion menú -->
+
+  <!-- seccion perfil -->
+  <section id="seccionPerfil">
+    <section class="seccion">
+      <header class="cabeza">
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="img/ICONO-PERFIL-300x300.png">
+          </div>
+        </div>
+      </header>
+    </section>
+    <section>
+      <secction class="secciondemierda">
+        <div class="row">
+          <div class="col-sm-12">
+            <input type="text">
+            <button type="button" class="btn btn-primary" id="firstb">AGREGAR TARJETA</button>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+
+          </div>
+        </div>
+      </secction>
+    </section>
+  </section>
+  <!-- fin seccion perfil -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

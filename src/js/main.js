@@ -7,3 +7,13 @@ btnLogin.addEventListener('click', () => {
   paperMenu.style.display = 'block';
   paperLogin.style.display = 'none';  
 });
+
+// seccion menu y perfil
+const btnPerfil = document.getElementById('threebPerfil');
+const paperBotons = document.getElementById('botonesMenu');
+const paperPerfil = document.getElementById('seccionPerfil')
+
+btnPerfil.addEventListener('click', () => {
+  paperPerfil.style.display = 'block';
+  paperBotons.style.display = 'none';  
+});

@@ -42,3 +42,30 @@ span,h4{
   display: none;
 }
 /* fin css seccion menú */
+
+/* css seccion perfil */
+.cabeza{
+  background-color: #f6a800;
+}
+img {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.secciondemierda { 
+ background-color: #dddee0; 
+}
+
+input {
+  display: block;
+  text-align: center;
+  margin: 2em;
+}
+
+#seccionPerfil{
+  display: none;
+}
+
+/* fin css seccion perfil */
+
+
