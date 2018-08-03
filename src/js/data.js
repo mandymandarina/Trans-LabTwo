@@ -57,22 +57,23 @@ function register(){
           console.log("Error de firebase > "+error.code);
           console.log("Error de firebase, mensaje > "+error.message);
       });
-}
+};
 
 function numberCard(){
-  const cardText = firstbCard.value;
-  if (CardText === '') {    
-    document.getElementById('firstbCard').value = '';
+  const cardText = agCard.value;
+  if (cardText === '') {    
+    errorNumber.innerHTML = '<div class="alert alert-danger alertConteiner" role="alert" id="errorTxt"> Error: Debes ingresar un numero </div>';
   } else {
     const currentUser = firebase.auth().currentUser;
-    const cardText = firstbCard.value;
+    const cardText = agCard.value;
     const newMessageKey = firebase.database().ref().child('Cards').push().key;
-    firebase.database().ref(`Cards/${newMessageKey}`).set({            
+    firebase.database().ref(`Cards/${newMessageKey}`).set({ 
+      creator: currentUser.uid,          
       Number: cardText,      
     });
     // Limpiar el textarea
-    document.getElementById('firstbCard').value = '';
+    document.getElementById('agCard').value = '';
     // newFunction();
     // otherFunction();
   }
-}
+};
