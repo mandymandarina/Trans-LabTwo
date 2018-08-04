@@ -87,3 +87,18 @@ firebase.database().ref('Cards')
   .on('child_added', (newMessage) => {  
     agEmail.innerHTML += `<div class="row">${newMessage.val().EmailUser}</div>`;
   });
+
+  const btnVer= document.getElementById('botonVer')
+  btnVer.addEventListener('click', (event) => {    
+    btnVer.value = '';  
+      fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=19411137`)
+      .then(response => response.json())//si la respuesta es correcta va a dar la informacion como una promesa
+      .then(data => {
+        console.log(data);
+        renderInfo(data);
+      })    
+  });
+
+  const renderInfo = (data) => {
+    agSaldo.innerHTML = data.saldoTarjeta;   
+  }
