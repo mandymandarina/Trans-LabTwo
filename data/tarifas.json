@@ -1,11 +1,14 @@
 [
   {
-    "Horario Alto": "$760"      
+    "tarifa": "Horario Alto",
+    "costo": "$760"      
   },
   {
-      "Horario Medio": "$680"      
+      "tarifa": "Horario Medio",
+      "costo": "$680"   
   },
   {
-      "Horario Bajo": "$630"     
+      "tarifa": "Horario Bajo",
+      "costo": "$630"    
   }  
 ]

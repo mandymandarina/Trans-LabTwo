@@ -61,7 +61,7 @@ btnTarifa.addEventListener('click', () => {
 });
 
 // de tarifa a menu
-const btnHomer = document.getElementById('iconhome');
+const btnHomer = document.getElementById('iconHome');
 const papeHomer = document.getElementById('botonesMenu');
 const papeTarifa = document.getElementById('seccionTarifa')
 
@@ -69,5 +69,35 @@ btnHomer.addEventListener('click', () => {
   papeTarifa.style.display = 'none'; 
   papeHomer.style.display = 'block';
 });
+
+// del menu a ver saldo
+const btnPeso = document.getElementById('iconPeso');
+const botonesSec = document.getElementById('botonesMenu');
+const paperVerSaldo = document.getElementById('seccionCard')
+
+btnPeso.addEventListener('click', () => {  
+  botonesSec.style.display = 'none'; 
+  paperVerSaldo.style.display = 'block';
+});
+
+// del menu a calcular 
+const btnCalcu = document.getElementById('iconCalcu');
+const botonesSecu = document.getElementById('botonesMenu');
+const paperCalcuTar = document.getElementById('seccionTarifa')
+
+btnCalcu.addEventListener('click', () => {  
+  botonesSecu.style.display = 'none'; 
+  paperCalcuTar.style.display = 'block';
+});
+
+// del menu a perfil
+const iconPerBtn = document.getElementById('iconPerfil');
+const botonesSeco = document.getElementById('botonesMenu');
+const secPerPa = document.getElementById('seccionPerfil')
+iconPerBtn.addEventListener('click', () => {  
+  botonesSeco.style.display = 'none'; 
+  secPerPa.style.display = 'block';
+});
+
 
 

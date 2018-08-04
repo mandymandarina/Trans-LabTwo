@@ -82,11 +82,11 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-calculator"></i> Calcular Tarifa</a>
+                      <i class="fas fa-calculator"id="iconCalcu"></i> Calcular Tarifa</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-user-alt"></i> Perfil</a>
+                      <i class="fas fa-user-alt" id="iconPerfil"></i> Perfil</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
@@ -141,7 +141,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="inPer" id="agEmail"></div>
-            <input type="text" class="inPer" id="agCard">
+            <input type="text" class="inPer" id="agCard" placeholder="Numero de tarjeta">
             <div id="errorNumber"></div>
             <button type="button" class="btn btn-terciary" onclick="numberCard()" id="firstbCard">AGREGAR TARJETA</button>
             <div class="inPer" id="cardSee"></div>            
@@ -173,17 +173,17 @@
   <!-- seccion calcular tarifa -->
   <secction id="seccionTarifa">
     <div class="tarifa">
-      <input type="text" class="inPer">
+      <input type="text" class="inPero" placeholder="Numero de tarjeta">
     </div>
     <div class="seconTarifa">
-      <div class="input-group mb-3">      
+      <div class="input-group mb-4">      
         <select class="form-control" id="listaTarifa">
           <option id="optionTarjetas">
             chose your option
           </option>
         </select>
       </div>
-      <div class="input-group mb-3">      
+      <div class="input-group mb-4">      
         <select class="form-control" id="listaTarjeta">
           <option id="optionTarjetas">
             chose your option
@@ -192,12 +192,15 @@
       </div>
     </div>
     <div class="btnCalTarifa">
-      <button type="button" class="botonVerSaldo" id="botonTaf">VER SALDO</button>
+      <button type="button" class="botonVerSaldo" id="botonTaf">CALCULAR</button>
     </div>
     <div id"verTrifa"></div>
     <div id="verSalDes"></div>
   </secction>
-  <!-- fin seccion calcular calcular -->
+  <!-- fin seccion calcular tarifa -->
+
+  <!-- seccion preguntas frecuentes -->
+  <!-- fin seccion preguntas frecuentes -->
 
   <!-- vinculo firebase -->  
 <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>

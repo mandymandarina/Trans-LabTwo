@@ -125,4 +125,31 @@ firebase.database().ref('Cards')
   });
 
   // funcion lista de tarifas
+  const listaTaf = document.getElementById("listaTarifa");    
+  fetch('data/tarifas.json')
+    .then(response => response.json())
+    .then(data => {
+      window.datos = data;
+      console.log(data);
+      data.forEach(element => {
+        let optionTarifa = document.createElement('option');
+        optionTarifa.text = element.tarifa;
+        listaTaf.add(optionTarifa);      
+      });   
+    });
+
+    /*
+    let tarifaVer = document.getElementById('verTrifa');
+    const btnSelect = document.getElementById('option');
+    fetch('data/tarifas.json')
+    .then(response => response.json())
+    .then(data => {
+    data.forEach(element => {
+    btnSelect.addEventListener('click', ()=>{
+      tarifaVer.innerHTML = element.costo;
+    })    
+  });
+});
+*/
+
   

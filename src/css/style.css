@@ -40,7 +40,7 @@ span,h4{
 }
 
  
-#seccionMenu{
+#seccionMenu {
   display: none;
   background-color: #dddee0;
 }
@@ -90,7 +90,6 @@ input {
 /* fin css seccion perfil */
 
 /* css seccion ver saldo */
-
 .muroCard {
   background-color: #dddee0;
 }
@@ -103,7 +102,7 @@ input {
   margin:1em;
   background-color: #f6a800;
   border:  #f6a800; 
-  text-align: center;    
+  text-align: center;      
   border-radius: 0;
 }
 /* fin css seccion ver saldo */
@@ -113,7 +112,17 @@ input {
  display: none;
  background-color: #dddee0;
 }
-
+.seconTarifa {  
+  display: inline-flex;
+}
+.mb-4 {
+  width: 15em;
+  margin:1em;  
+}
+.inPero{
+  text-align: center;
+  width: 30em;
+}
 /* fin css seccion tarifa */
 
 
