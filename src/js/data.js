@@ -123,3 +123,6 @@ firebase.database().ref('Cards')
     optionTarjeta.text = newMessage.val().Number;
     list.add(optionTarjeta);    
   });
+
+  // funcion lista de tarifas
+  
