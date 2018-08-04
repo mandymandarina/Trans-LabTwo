@@ -72,8 +72,18 @@ function numberCard(){
       Number: cardText,      
     });
     // Limpiar el textarea
-    document.getElementById('agCard').value = '';
-    // newFunction();
-    // otherFunction();
+    document.getElementById('agCard').value = ''; 
   }
 };
+
+firebase.database().ref('Cards') 
+  .limitToLast(4)
+  .on('child_added', (newMessage) => {  
+    cardSee.innerHTML += `<div class="row">${newMessage.val().Number}</div>`;
+  });
+
+  firebase.database().ref('users') 
+  .limitToFirst(1)
+  .on('child_added', (newMessage) => {  
+    agEmail.innerHTML += `<div class="row">${newMessage.val().EmailUser}</div>`;
+  });

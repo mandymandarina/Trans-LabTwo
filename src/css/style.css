@@ -81,6 +81,9 @@ input {
   text-align: center;
   margin: 2em;
 }
+.inPer {
+  text-align: center;
+}
 #seccionPerfil{
   display: none;
 }
