@@ -108,4 +108,12 @@ input {
 }
 /* fin css seccion ver saldo */
 
+/* css seccion tarifa */
+#seccionTarifa{
+ display: none;
+ background-color: #dddee0;
+}
+
+/* fin css seccion tarifa */
+
 

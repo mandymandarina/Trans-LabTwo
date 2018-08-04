@@ -103,3 +103,23 @@ firebase.database().ref('Cards')
   const renderInfo = (data) => {
     agSaldo.innerHTML = data.saldoTarjeta;   
   }
+
+  // funcion lista tarjetas en seccion ver saldo
+  firebase.database().ref('Cards') 
+  .limitToLast(2)
+  .on('child_added', (newMessage) => { 
+    const lista = document.getElementById("listaTarjetas");
+    let optionTarjetas = document.createElement('option');
+    optionTarjetas.text = newMessage.val().Number;
+    lista.add(optionTarjetas);    
+  });
+
+  // funcion lista de tarjetas en seccion calcular tarifa
+  firebase.database().ref('Cards') 
+  .limitToLast(2)
+  .on('child_added', (newMessage) => { 
+    const list = document.getElementById("listaTarjeta");
+    let optionTarjeta = document.createElement('option');
+    optionTarjeta.text = newMessage.val().Number;
+    list.add(optionTarjeta);    
+  });
