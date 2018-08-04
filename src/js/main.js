@@ -99,5 +99,15 @@ iconPerBtn.addEventListener('click', () => {
   secPerPa.style.display = 'block';
 });
 
+// de login a registro
+const iconPerBtn = document.getElementById('iconPerfil');
+const botonesSeco = document.getElementById('botonesMenu');
+const secPerPa = document.getElementById('seccionPerfil')
+iconPerBtn.addEventListener('click', () => {  
+  botonesSeco.style.display = 'none'; 
+  secPerPa.style.display = 'block';
+});
+
+
 
 
