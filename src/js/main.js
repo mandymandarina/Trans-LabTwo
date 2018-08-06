@@ -111,12 +111,12 @@ btnReg.addEventListener('click', () => {
 
 // de registro a menu 
 const btnRegi = document.getElementById('register');
-const sctLog = document.getElementById('sectionLogin');
-const sctReg = document.getElementById('registerSec');
+const sctRegi = document.getElementById('registerSec');
+const sctMenu = document.getElementById('seccionMenu');
 
 btnRegi.addEventListener('click', () => {  
-  sctLog.style.display = 'none'; 
-  sctReg.style.display = 'block';
+  sctRegi.style.display = 'none'; 
+  sctMenu.style.display = 'block';
 });
 
 
