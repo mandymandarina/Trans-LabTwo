@@ -162,6 +162,9 @@ input {
   background-color: #f6a800;
   width: 5em;
   color: white;
+  text-align: center;
+  margin-left: 10em;
+  margin-bottom: 5em;
 }
 /* fin css seccion ver saldo */
 
