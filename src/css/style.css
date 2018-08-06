@@ -73,7 +73,12 @@ img {
 .inPer {
   width: 40em;
   margin:1em;
-  text-align: center; 
+  text-align: center;
+  background-color: #dddee0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #a6a6a8; 
 }
 
 .btn-terciary {  
