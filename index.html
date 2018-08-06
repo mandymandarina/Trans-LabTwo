@@ -158,11 +158,11 @@
       <secction class="secciondemierda">
         <div class="row">
           <div class="col-sm-12">
-            <div class="inPer" id="agEmail"></div>
+            <div class="inEmailSaldo" id="agEmail"></div>
             <input type="text" class="inPer" id="agCard" placeholder="Numero de tarjeta">
             <div id="errorNumber"></div>
             <button type="button" class="btn btn-terciary" onclick="numberCard()" id="firstbCard">AGREGAR TARJETA</button>
-            <div class="inPer" id="cardSee"></div>            
+            <div class="inEmailSaldo" id="cardSee"></div>            
 
           </div>
         </div>
@@ -174,7 +174,7 @@
   <!-- seccion ver saldo-->
   <section id="seccionCard" class="muroCard">
     <div>
-  <input type="text" class="form-control" id="inputTarjeta" placeholder="Numero tarjeta" value="">
+  <input type="text" class="inPer" id="inputTarjeta" placeholder="Numero tarjeta" value="">
   <div class="input-group mb-3">      
     <select class="form-control" id="listaTarjetas">
       <option id="optionTarjetas">
@@ -183,7 +183,7 @@
     </select>
     </div>
     <button type="button" class="botonVerSaldo" id="botonVer">VER SALDO</button>
-    <div id="agSaldo"></div>
+    <div class="divSaldo" id="agSaldo"></div>
   </div>
   </section>
   <!-- fin seccion ver saldo -->

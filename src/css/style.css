@@ -81,6 +81,16 @@ img {
   border-color: #a6a6a8; 
 }
 
+.inEmailSaldo{
+  background-color: white;
+  border: none;
+  text-align: center;
+  width: 20em;
+  border-radius: 1%;
+  margin: 1em;
+  margin-bottom: 1em; 
+}
+
 .btn-terciary {  
   width: 40em;
   margin:1em;

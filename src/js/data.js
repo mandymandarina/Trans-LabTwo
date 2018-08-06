@@ -88,16 +88,17 @@ firebase.database().ref('Cards')
     agEmail.innerHTML += `<div class="row">${newMessage.val().EmailUser}</div>`;
   });
 
+  // fetch de api para seccion ver saldo
   const btnVer= document.getElementById('botonVer')
-  btnVer.addEventListener('click', (event) => {    
+  btnVer.addEventListener('click', (event) => {
+    fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=02139318`)
+    .then(response => response.json())//si la respuesta es correcta va a dar la informacion como una promesa
+    .then(data => {
+      console.log(data);
+      renderInfo(data);
+    })       
     btnVer.value = '';
-    const id = document.getElementById('inputTarjeta');
-      fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=02139318`)
-      .then(response => response.json())//si la respuesta es correcta va a dar la informacion como una promesa
-      .then(data => {
-        console.log(data);
-        renderInfo(data);
-      })    
+    const id = document.getElementById('inputTarjeta');      
   });
 
   const renderInfo = (data) => {
@@ -151,5 +152,6 @@ firebase.database().ref('Cards')
   });
 });
 */
+
 
   
