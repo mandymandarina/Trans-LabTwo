@@ -93,7 +93,7 @@ const btnVer = document.getElementById('botonVer')
 btnVer.addEventListener('click', (event) => {
   let id = document.getElementById('inputTarjeta').value;
   console.log(id);
-  fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${id}`)
+  fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${id}`)
     .then(response => response.json())//si la respuesta es correcta va a dar la informacion como una promesa
     .then(data => {
       console.log(data);
