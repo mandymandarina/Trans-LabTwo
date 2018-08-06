@@ -1,25 +1,34 @@
 /* css del login */
 body {
   background-color: rgb(64, 65, 67);
-  text-align: center;
-  margin: auto;
+  text-align: center;  
   width: 60%;
   padding: 10px;
+  margin: auto;
 }
 
-.form-control{  
+.form-control {  
   width: 15em;
-  margin: -1em;
+  margin: -1em;  
+  text-align: center;
+  margin-left: 5em;
+ 
 }
 
 #imagen {  
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+  
 }
 
-span,h4{
+span{
+  color: #f6a800;  
+}
+
+h4 {
   color: #f6a800;
+  
 }
 
 .btn-secondary {  
@@ -27,6 +36,7 @@ span,h4{
   margin-top: 1em;  
   background-color: #f6a800;
   border:  #f6a800;
+  margin-left: 0em;
  }
 
  .nav-item{
@@ -36,7 +46,8 @@ span,h4{
 
  /* css seccion registro */
  #registerSec {
-   display: none;   
+   display: none; 
+   margin: auto;  
  }
 
  .btn-cuater{
@@ -114,9 +125,9 @@ input {
   text-align: center;
   margin: 2em;
 }
-.inPer {
-  text-align: center;
-  width: 20em;
+.inPer {  
+  width: 15em;
+  margin-left: 5em;
 }
 #seccionPerfil{
   display: none;
@@ -126,13 +137,14 @@ input {
 /* css seccion ver saldo */
 .muroCard {
   background-color: #dddee0;
+  width: 100em;
 }
 #seccionCard {
   display: none;
   background-color: #dddee0;
 }
 .botonVerSaldo{
-  width: 20em;
+  width: 15em;
   margin:1em;
   background-color: #f6a800;
   border:  #f6a800; 
