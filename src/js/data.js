@@ -79,13 +79,13 @@ function numberCard() {
 firebase.database().ref('Cards')
   .limitToLast(3)
   .on('child_added', (newMessage) => {
-    cardSee.innerHTML += `<div class="row">${newMessage.val().Number}</div>`;
+    cardSee.innerHTML += `<div class="inEmailSaldo">${newMessage.val().Number}</div>`;
   });
 
 firebase.database().ref('users')
   .limitToFirst(1)
   .on('child_added', (newMessage) => {
-    agEmail.innerHTML += `<div class="row">${newMessage.val().EmailUser}</div>`;
+    agEmail.innerHTML += `<div class="inEmailSaldo">${newMessage.val().EmailUser}</div>`;
   });
 
 // fetch de api para seccion ver saldo
