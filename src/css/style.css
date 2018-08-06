@@ -29,6 +29,18 @@ span,h4{
  }
  /* fin css login */
 
+ /* css seccion registro */
+ #registerSec {
+   display: none;   
+ }
+
+ .btn-cuater{
+  width: 20em;
+  height: 2em;
+  background-color: #f6a800;
+ }
+ /* fin seccion registro */
+
  /* css secion menú */
 .btn-primary{
   width: 100em;

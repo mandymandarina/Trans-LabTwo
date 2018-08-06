@@ -54,7 +54,7 @@
     </div>
     <footer>
       <h5>¿NO TIENES CUENTA?
-        <span>REGISTRATE</span>
+        <span id="reg">REGISTRATE</span>
       </h5>
     </footer>
     </div>
@@ -63,15 +63,20 @@
   <!-- fin de seccion login -->
 
   <!-- seccion registrate -->
-  <section id="registerSec">  
-  <div id="loggedOut">
-    <input id="email" type="email">
-    <input id="password" type="password">
-    
-    <input id="register" onclick="register()" type="button" value="REGISTER">
-    <input id="login" onclick="login()" type="button" value="LOGIN">
-    <input id="loginFacebook" type="button" onclick="loginFacebook()" value="LOGIN FACEBOOK">
-</div>
+  <section id="registerSec">   
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1"></label>
+    <input type="email" id="email" class="form-control" placeholder="Correo electronico" value="">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="password" placeholder="Contraseña" value="">
+  </div>
+  <button type="button" class="btn btn-secondary" id="register" onclick="registerLog()" type="button" value="REGISTER">Registrar</button>
+  <div class="alertConteiner" id="alertPassword"></div>
+</form>
 </section>
   <!-- fin seccion registrate -->
 

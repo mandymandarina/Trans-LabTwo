@@ -100,12 +100,23 @@ iconPerBtn.addEventListener('click', () => {
 });
 
 // de login a registro
-const iconPerBtn = document.getElementById('iconPerfil');
-const botonesSeco = document.getElementById('botonesMenu');
-const secPerPa = document.getElementById('seccionPerfil')
-iconPerBtn.addEventListener('click', () => {  
-  botonesSeco.style.display = 'none'; 
-  secPerPa.style.display = 'block';
+const btnReg = document.getElementById('reg');
+const sctLog = document.getElementById('sectionLogin');
+const sctReg = document.getElementById('registerSec');
+
+btnReg.addEventListener('click', () => {  
+  sctLog.style.display = 'none'; 
+  sctReg.style.display = 'block';
+});
+
+// de registro a menu 
+const btnRegi = document.getElementById('register');
+const sctLog = document.getElementById('sectionLogin');
+const sctReg = document.getElementById('registerSec');
+
+btnRegi.addEventListener('click', () => {  
+  sctLog.style.display = 'none'; 
+  sctReg.style.display = 'block';
 });
 
 
