@@ -1,0 +1,189 @@
+/* css del login */
+body {
+  background-color: rgb(64, 65, 67);
+  text-align: center;  
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+}
+
+.form-control {  
+  width: 15em;
+  margin: -1em;  
+  text-align: center;
+  margin-left: 5em;
+ 
+}
+
+#imagen {  
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+
+span{
+  color: #f6a800;  
+}
+
+h4 {
+  color: #f6a800;
+  
+}
+
+.btn-secondary {  
+  width: 10em;
+  margin-top: 1em;  
+  background-color: #f6a800;
+  border:  #f6a800;
+  margin-left: 0em;
+ }
+
+ .nav-item{
+  text-align: justify;
+ }
+ /* fin css login */
+
+ /* css seccion registro */
+ #registerSec {
+   display: none; 
+   margin: auto;  
+ }
+
+ .btn-cuater{
+  width: 20em;
+  height: 2em;
+  background-color: #f6a800;
+ }
+ /* fin seccion registro */
+
+ /* menu nav */
+ nav {
+   background-color:  #dddee0;
+ }
+ /* fin menu nav */
+
+ /* css secion menú */
+.btn-primary{
+  width: 100em;
+  margin:1em;
+  background-color: #f6a800;
+  border:  #f6a800; 
+  text-align: center;    
+  border-radius: 0;
+}
+
+ 
+#seccionMenu {
+  display: none;
+  background-color: #dddee0;
+}
+/* fin css seccion menú */
+
+/* css seccion perfil */
+#seccionPerfil{
+  background-color: #dddee0;
+}
+.cabeza{
+  background-color: #f6a800;
+}
+img {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.inPer {
+  width: 40em;
+  margin-left:15em;
+  text-align: center;
+  background-color: #dddee0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #a6a6a8; 
+}
+
+.inEmailSaldo{
+  background-color: white;
+  border: none;
+  text-align: center;
+  width: 20em;
+  border-radius: 1%;
+  margin: 1em;
+  margin-bottom: 1em; 
+}
+
+.btn-terciary {  
+  width: 20em;
+  margin:1em;
+  background-color: #f6a800;
+  border:  #f6a800; 
+  text-align: center;    
+  border-radius: 0;
+  color: white;
+}
+.secciondemierda { 
+ background-color: #dddee0; 
+}
+
+input {
+  display: block;
+  text-align: center;
+  margin: 2em;
+}
+.inPer {  
+  width: 15em;
+  margin-left: 5em;
+}
+#seccionPerfil{
+  display: none;
+}
+/* fin css seccion perfil */
+
+/* css seccion ver saldo */
+.muroCard {
+  background-color: #dddee0;  
+}
+#seccionCard {
+  display: none;
+  background-color: #dddee0;
+}
+.botonVerSaldo{
+  width: 15em;
+  margin:1em;
+  background-color: #f6a800;
+  border:  #f6a800; 
+  text-align: center;      
+  border-radius: 0;
+  color: white;
+}
+
+.divSaldo {
+  background-color: #f6a800;
+  width: 5em;
+  color: white;
+  text-align: center;
+  margin-left: 10em;
+  margin-bottom: 5em;
+}
+/* fin css seccion ver saldo */
+
+/* css seccion tarifa */
+#seccionTarifa{
+ display: none;
+ background-color: #dddee0;
+}
+.seconTarifa {  
+  display: inline-flex;
+}
+.mb-4 {
+  width: 15em;
+  margin:1em;  
+}
+.inPero{
+  text-align: center;
+  width: 30em;
+}
+/* fin css seccion tarifa */
+
+
