@@ -57,6 +57,12 @@ h4 {
  }
  /* fin seccion registro */
 
+ /* menu nav */
+ nav {
+   background-color:  #dddee0;
+ }
+ /* fin menu nav */
+
  /* css secion menú */
 .btn-primary{
   width: 100em;
@@ -136,8 +142,7 @@ input {
 
 /* css seccion ver saldo */
 .muroCard {
-  background-color: #dddee0;
-  width: 100em;
+  background-color: #dddee0;  
 }
 #seccionCard {
   display: none;
