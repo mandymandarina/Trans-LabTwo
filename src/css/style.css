@@ -43,7 +43,16 @@ h4 {
   text-align: justify;
  }
  /* fin css login */
+ .navMenu {  
+  color: white;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  size: 13px;
+}
 
+.navbar{
+  background-color: #f6a800;
+}
  /* css seccion registro */
  #registerSec {
    display: none; 
@@ -93,14 +102,15 @@ img {
 }
 
 .inPer {
-  width: 40em;
-  margin-left:15em;
+  width: 15em;
+  margin-left:10em;
   text-align: center;
   background-color: #dddee0;
   border-top: none;
   border-left: none;
   border-right: none;
   border-color: #a6a6a8; 
+  background-color: #dddee0;
 }
 
 .inEmailSaldo{
@@ -110,7 +120,7 @@ img {
   width: 20em;
   border-radius: 1%;
   margin: 1em;
-  margin-bottom: 1em; 
+  margin-left: 7em; 
 }
 
 .btn-terciary {  
@@ -131,10 +141,7 @@ input {
   text-align: center;
   margin: 2em;
 }
-.inPer {  
-  width: 15em;
-  margin-left: 5em;
-}
+
 #seccionPerfil{
   display: none;
 }
@@ -175,6 +182,8 @@ input {
 }
 .seconTarifa {  
   display: inline-flex;
+  width: 35em;
+  margin-left: -3em;
 }
 .mb-4 {
   width: 15em;
@@ -186,4 +195,8 @@ input {
 }
 /* fin css seccion tarifa */
 
-
+@media (min-width: 768px){
+  .sectionLog, .registerSec, .seccionPerfil{
+    font-size: 15px;
+  }
+  }

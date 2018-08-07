@@ -79,15 +79,16 @@ function numberCard() {
 firebase.database().ref('Cards')
   .limitToLast(3)
   .on('child_added', (newMessage) => {
-    cardSee.innerHTML += `<div class="inEmailSaldo">${newMessage.val().Number}</div>`;
+    cardSee.innerHTML += `<div>${newMessage.val().Number}</div>`;
   });
 
 firebase.database().ref('users')
   .limitToFirst(1)
   .on('child_added', (newMessage) => {
-    agEmail.innerHTML += `<div class="inEmailSaldo">${newMessage.val().EmailUser}</div>`;
+    agEmail.innerHTML += `${newMessage.val().EmailUser}`;
   });
 
+  window.onload = function() {
 // fetch de api para seccion ver saldo
 const btnVer = document.getElementById('botonVer')
 btnVer.addEventListener('click', (event) => {
@@ -156,8 +157,20 @@ tarifaVer.addEventListener('click', (event) => {
     const renderCost = (data) => {
       console.log(data[0].costo);
       const verTar = document.getElementById('verTarifa')
-      verTar.innerHTML = data[0].costo;
+      verTar.innerHTML = data[0].costo;            
     }
+    //calculationSal();
+  }
+
+// para ver tarifa en seccion calcular saldo en seccion tarifa
+function calculationSal(){
+  let tarifaCal = data[0].costo;
+  console.log(tarifaCal);
+  let saldoCal = data.saldoTarjeta;
+  console.log(saldoCal);
+  }
+
+    
 
 /*
 let select = document.getElementById('listaTarifa');
