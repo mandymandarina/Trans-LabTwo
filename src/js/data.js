@@ -135,7 +135,7 @@ select.addEventListener('change',
     var selectedOption = this.options[select.selectedIndex];
     console.log(selectedOption.value + ': ' + selectedOption.text);
     //verTarifa.innerHTML = `${selectedOption.value + ': ' + selectedOption.text}`;
-    verTarifa.innerHTML = '$' + `${selectedOption.value}`;
+    verTarifa.innerHTML = `<div class="costototal">COSTO PASAJE</div>$${selectedOption.value}`;
     });
 
 /*const listaTaf = document.getElementById("listaTarifa");
@@ -207,7 +207,7 @@ select.addEventListener('change',
       const saldoTar = parseInt(saldoTa[0] + saldoTa[1]);
       const selectorSal = document.getElementById('listaTarifa').value;      
       const totalCalculo = saldoTar - selectorSal;
-      verSalDes.innerHTML = '$' + totalCalculo;           
+      verSalDes.innerHTML = `<div class="costototal">COSTO PASAJE</div>$ `+totalCalculo;           
     })
     .catch(error => {
       console.error('respuesta incorrecta');

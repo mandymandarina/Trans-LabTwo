@@ -8,9 +8,8 @@ body {
 }
 
 .form-control {  
-  width: 15em;
-  margin: -1em;  
-  text-align: center; 
+  margin-right: 5%;
+   
 }
 
 #imagen {  
@@ -68,6 +67,10 @@ h4 {
  nav {
    background-color:  #dddee0;
  }
+ 
+.leterMenu {
+  color: #f6a800;
+}
  /* fin menu nav */
 
  /* css secion menú */
@@ -95,6 +98,12 @@ h4 {
 #seccionMenu {
   display: none;
   background-color: #dddee0;
+}
+.flex-column {
+  background-color: white;
+}
+.bg-dark {
+  background-color: white;
 }
 /* fin css seccion menú */
 
@@ -133,13 +142,11 @@ img {
 }
 
 .btn-terciary {  
-  width: 20em;
-  margin:1em;
-  background-color: #f6a800;
-  border:  #f6a800; 
-  text-align: center;    
-  border-radius: 0;
+  background-color: #F6A800;
   color: white;
+  width: 47%;
+  padding: 0%;
+  font-size: 16px;;
 }
 .secciondemierda { 
  background-color: #dddee0; 
@@ -166,22 +173,25 @@ input {
   margin-top: -2em;
 }
 .botonVerSaldo{
-  width: 15em;
-  margin:1em;
-  background-color: #f6a800;
-  border:  #f6a800; 
-  text-align: center;      
-  border-radius: 0;
+  background-color: #F6A800;
   color: white;
+  width: 45%;
+  padding: 0%;
+  font-size: 16px;
 }
-
+.costototal{
+  background-color: #3e3f41;
+  font-size: 15px;
+}
 .divSaldo {
-  background-color: #f6a800;
-  width: 5em;
   color: white;
-  text-align: center;
-  margin-left: 10em;
-  margin-bottom: 5em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  background-color: #F6A800;
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold
 }
 /* fin css seccion ver saldo */
 
@@ -209,4 +219,17 @@ input {
   .sectionLog, .registerSec, .seccionPerfil{
     font-size: 15px;
   }
+  }
+
+  /* preguntas */
+
+  #sectionQuest {
+    display: none;
+  }
+
+  .preguntas{
+    background-color: #f6a800;
+    color: white;
+    font-size: 50px;
+    height: 200px;
   }

@@ -89,37 +89,39 @@
         <!-- fin de row -->
         <div class="col-sm 6">
           <!-- comienzo menu -->
+       
           <!-- <nav> menu nav comentado por si acaso -->
+            
           <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
               <div class="bg-dark p-4">
                 <ul class="nav flex-column">
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-dollar-sign" id="iconPeso"></i> Ver saldo</a>
+                        <p class="leterMenu"><i class="fas fa-dollar-sign" id="iconPeso"></i> Ver saldo</p></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-calculator"id="iconCalcu"></i> Calcular Tarifa</a>
+                        <p class="leterMenu"><i class="fas fa-calculator"id="iconCalcu"></i> Calcular Tarifa</p></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-user-alt" id="iconPerfil"></i> Perfil</a>
+                        <p class="leterMenu"><i class="fas fa-user-alt" id="iconPerfil"></i> Perfil</p></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-file-alt"></i> Preguntas Frecuentes</a>
+                        <p class="leterMenu"><i class="fas fa-file-alt"></i> Preguntas Frecuentes</p></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-arrow-right" id="iconHome"></i> Home</a>
+                        <p class="leterMenu"><i class="fas fa-arrow-right" id="iconHome"></i>Home</p></a>
                   </li>
                 </ul>
               </div>
             </div>
             <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
                 <span class="navbar-toggler-icon"></span>                
               </button>
               <p class="navMenu">TRANS-LAB</p>
@@ -137,7 +139,7 @@
           <button type="button" class="btn btn-primary" id="firstbSaldo"><p class="parrFuBt">VER SALDO</p></button>
           <button type="button" class="btn btn-primary" id="secondbTarifa"><p class="parrFuBt">CALCULAR TARIFA</p></button>
           <button type="button" class="btn btn-primary" id="threebPerfil"><p class="parrFuBt">PERFIL</p></button>
-          <button type="button" class="btn btn-primary" id="fourb"><p class="parrFuBt">PREGUNTAS FRECUENTES</p></button>
+          <button type="button" class="btn btn-primary" id="fourbHoja"><p class="parrFuBt">PREGUNTAS FRECUENTES</p></button>
         </div>
       </div>
   </secction>
@@ -210,7 +212,7 @@
       <div class="input-group mb-4">      
         <select class="form-control" id="listaTarjeta">
           <option id="optionTarjetas">
-            chose your option
+            Seleccione una tarjeta
           </option>
         </select>
       </div>
@@ -218,12 +220,42 @@
     <div class="btnCalTarifa">      
       <button type="button" class="botonVerSaldo" id="botonTari" onclick="calculationTaf()">CALCULAR</button>
     </div>
-    <div id="verTarifa" class="divSaldo"></div>
+    <div id="verTarifa" class="divSaldo">      
+  </div>
     <div id="verSalDes" class="divSaldo"></div>
   </secction>
   <!-- fin seccion calcular tarifa -->
 
   <!-- seccion preguntas frecuentes -->
+    
+  <div class="container-fluid questions" id="sectionQuest">
+    <section class="preguntas">
+    <div>
+      <p>Preguntas frecuentes</p>
+    </div>
+    </section>
+    
+    <nav>
+        <div class="container-fluid questionM">           
+            <p>En esta seccion puedes encontrar las respuestas a tus preguntas sobre la tarjeta Bip.</p>
+            <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo">¿Dónde puedo cambiar mi tarjeta bip! portador en caso de falla?</button>
+            <div id="demo" class="collapse">
+                Si tu tarjeta no funciona y tiene daños no atribuibles al usuario, llévala a una Oficina de Servicio al Cliente donde será cambiada por una nueva, sólo si se comprueba la falla. Si la tarjeta dañada tiene saldo, será traspasado en cinco días hábiles.
+            </div>
+          </div>
+          <div class="container-fluid questionM">               
+              <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo">¿Cómo reviso la historia de los movimientos de mi tarjeta bip!?</button>
+              <div id="demo" class="collapse">
+                  Revisa las transacciones de tu tarjeta de los últimos 90 días ingresando a la sección “bip! en línea!” 
+              </div>
+            </div>
+            <div class="container-fluid questionM">               
+                <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo">¿Dónde puedo dar mi opinión o sugerencia acerca de la tarjeta bip!?</button>
+                <div id="demo" class="collapse">
+                    Tienes dos maneras. La primera es hacerlo por nuestro call center llamando al 800 730 00 73 y marcando la opción 2.
+                </div>
+              </div>      
+  </div>
   <!-- fin seccion preguntas frecuentes -->
 
   <!-- vinculo firebase -->  
