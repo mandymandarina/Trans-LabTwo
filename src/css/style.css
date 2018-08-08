@@ -10,9 +10,7 @@ body {
 .form-control {  
   width: 15em;
   margin: -1em;  
-  text-align: center;
-  margin-left: 5em;
- 
+  text-align: center; 
 }
 
 #imagen {  
@@ -73,6 +71,13 @@ h4 {
  /* fin menu nav */
 
  /* css secion menú */
+
+ .container-fluid {
+   width: 100%;   
+ }
+ .botonesylactm {
+   width: 100%;
+ }
 .btn-primary{
   width: 100em;
   margin:1em;
@@ -80,8 +85,12 @@ h4 {
   border:  #f6a800; 
   text-align: center;    
   border-radius: 0;
+  height: 1.5em;
 }
-
+.parrFuBt{
+  font: 0.7em sans-serif;
+  text-align: center;
+}
  
 #seccionMenu {
   display: none;
@@ -154,6 +163,7 @@ input {
 #seccionCard {
   display: none;
   background-color: #dddee0;
+  margin-top: -2em;
 }
 .botonVerSaldo{
   width: 15em;

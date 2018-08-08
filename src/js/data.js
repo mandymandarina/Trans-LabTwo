@@ -134,7 +134,8 @@ select.addEventListener('change',
   function(){
     var selectedOption = this.options[select.selectedIndex];
     console.log(selectedOption.value + ': ' + selectedOption.text);
-    verTarifa.innerHTML = `${selectedOption.value + ': ' + selectedOption.text}`;
+    //verTarifa.innerHTML = `${selectedOption.value + ': ' + selectedOption.text}`;
+    verTarifa.innerHTML = '$' + `${selectedOption.value}`;
     });
 
 /*const listaTaf = document.getElementById("listaTarifa");
@@ -201,12 +202,12 @@ select.addEventListener('change',
       console.log(infoData);
 
       // calculo de saldo menos tarifa
-      const regex = /(\d+)/g;
-      const saldoBip = infoData.saldoTarjeta.match(regex)
-      const saldoBipOk = parseInt(saldoBip[0] + saldoBip[1]);
+      const comando = /(\d+)/g;
+      const saldoTa = infoData.saldoTarjeta.match(comando)
+      const saldoTar = parseInt(saldoTa[0] + saldoTa[1]);
       const selectorSal = document.getElementById('listaTarifa').value;      
-      const totalCalculo = saldoBipOk - selectorSal;
-      document.getElementById('verSalDes').innerHTML = '$' + totalCalculo;           
+      const totalCalculo = saldoTar - selectorSal;
+      verSalDes.innerHTML = '$' + totalCalculo;           
     })
     .catch(error => {
       console.error('respuesta incorrecta');
@@ -219,6 +220,6 @@ select.addEventListener('change',
   
 
 
-//Me muestra el calculo de saldo menos la tarifa.
+
 
 
