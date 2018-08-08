@@ -191,15 +191,21 @@
   <!-- seccion calcular tarifa -->
   <secction id="seccionTarifa">
     <div class="tarifa">
-      <input type="text" class="inPer" placeholder="Numero de tarjeta">
+      <input type="text" class="inPer" placeholder="Numero de tarjeta" id="numeroTarjetaTwo">
     </div>
     <div class="seconTarifa">
-      <div class="input-group mb-4">      
+      <div class="input-group mb-4"> 
+        <!--       
         <select class="form-control" id="listaTarifa">
           <option id="optionTarjetas">
             chose your option
           </option>
-        </select>
+        </select>-->
+        <select class="form-control" id="listaTarifa">
+            <option value="" disabled selected>Seleccione una Tarifa</option>
+            <option value="760">Horario Alto</option>
+            <option value="680">Horario Medio</option>
+            <option value="630">Horario Bajo</option></select>  
       </div>
       <div class="input-group mb-4">      
         <select class="form-control" id="listaTarjeta">
@@ -209,9 +215,8 @@
         </select>
       </div>
     </div>
-    <div class="btnCalTarifa">
-      <button type="button" class="botonVerSaldo" id="botonTaf">TARIFA</button>
-      <button type="button" class="botonVerSaldo" id="botonTari" onclick="calulationSal()">CALCULAR</button>
+    <div class="btnCalTarifa">      
+      <button type="button" class="botonVerSaldo" id="botonTari" onclick="calculationTaf()">CALCULAR</button>
     </div>
     <div id="verTarifa" class="divSaldo"></div>
     <div id="verSalDes"></div>

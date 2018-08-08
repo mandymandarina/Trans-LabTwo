@@ -88,7 +88,7 @@ firebase.database().ref('users')
     agEmail.innerHTML += `${newMessage.val().EmailUser}`;
   });
 
-  window.onload = function() {
+  
 // fetch de api para seccion ver saldo
 const btnVer = document.getElementById('botonVer')
 btnVer.addEventListener('click', (event) => {
@@ -128,7 +128,16 @@ firebase.database().ref('Cards')
   });
 
 // funcion lista de tarifas para que se vean en el select
-const listaTaf = document.getElementById("listaTarifa");
+
+var select = document.getElementById('listaTarifa');
+select.addEventListener('change',
+  function(){
+    var selectedOption = this.options[select.selectedIndex];
+    console.log(selectedOption.value + ': ' + selectedOption.text);
+    verTarifa.innerHTML = `${selectedOption.value + ': ' + selectedOption.text}`;
+    });
+
+/*const listaTaf = document.getElementById("listaTarifa");
 fetch('data/tarifas.json')
   .then(response => response.json())
   .then(data => {
@@ -140,7 +149,7 @@ fetch('data/tarifas.json')
       listaTaf.add(optionTarifa);
     });
   });
-
+  
 
 const tarifaVer = document.getElementById('botonTaf');
 tarifaVer.addEventListener('click', (event) => {
@@ -154,6 +163,7 @@ tarifaVer.addEventListener('click', (event) => {
         renderCost(data);       
     });    
 });
+
     const renderCost = (data) => {
       console.log(data[0].costo);
       const verTar = document.getElementById('verTarifa')
@@ -169,10 +179,7 @@ function calculationSal(){
   let saldoCal = data.saldoTarjeta;
   console.log(saldoCal);
   }
-
-    
-
-/*
+  
 let select = document.getElementById('listaTarifa');
 select.addEventListener('change',
   function selectTarifa(){
@@ -181,6 +188,37 @@ select.addEventListener('change',
   });
   */
 
+ // llamar tarifa y numero de tarjeta
 
+ function calculationTaf() {
+  let numTarjeta = document.getElementById('numeroTarjetaTwo').value;
+  let numListTarjeta = document.getElementById('listaTarjeta').value;
+  fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta || numListTarjeta}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      infoData = data;
+      console.log(infoData);
+
+      // calculo de saldo menos tarifa
+      const regex = /(\d+)/g;
+      const saldoBip = infoData.saldoTarjeta.match(regex)
+      const saldoBipOk = parseInt(saldoBip[0] + saldoBip[1]);
+      const selectorSal = document.getElementById('listaTarifa').value;      
+      const totalCalculo = saldoBipOk - selectorSal;
+      document.getElementById('verSalDes').innerHTML = '$' + totalCalculo;           
+    })
+    .catch(error => {
+      console.error('respuesta incorrecta');
+      console.error("ERROR > " + error.stack);
+    });       
+    
+}
+
+    
+  
+
+
+//Me muestra el calculo de saldo menos la tarifa.
 
 
