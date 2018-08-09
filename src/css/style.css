@@ -233,3 +233,18 @@ input {
     font-size: 50px;
     height: 200px;
   }
+
+  .questPregun {
+    background-color: #dddee0;
+    width: 45%;
+    height: 75px;
+    padding: 0%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-left: -25em;
+  }
+  .reseña{
+    font-size: 25px;
+  }
+  

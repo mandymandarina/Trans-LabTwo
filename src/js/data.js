@@ -207,7 +207,7 @@ select.addEventListener('change',
       const saldoTar = parseInt(saldoTa[0] + saldoTa[1]);
       const selectorSal = document.getElementById('listaTarifa').value;      
       const totalCalculo = saldoTar - selectorSal;
-      verSalDes.innerHTML = `<div class="costototal">COSTO PASAJE</div>$ `+totalCalculo;           
+      verSalDes.innerHTML = `<div class="costototal">SALDO FINAL</div>$ `+totalCalculo;           
     })
     .catch(error => {
       console.error('respuesta incorrecta');
