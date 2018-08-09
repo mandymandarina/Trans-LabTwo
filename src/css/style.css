@@ -80,16 +80,15 @@ h4 {
  /* css secion menú */
 
  .menuHome {
-  padding-bottom: 100%;   
+  padding-bottom: 100%;     
  }
  
 .btn-primary{
   width: 15em;  
-  margin-top: 1em;
-  margin-left: auto;
+  margin-left: 30%;
+  margin-bottom: 1em;
   background-color: #f6a800;
-  border:  #f6a800; 
-  text-align: center;    
+  border:  #f6a800;     
   border-radius: 0;
   height: 1.5em;
   display: block;
