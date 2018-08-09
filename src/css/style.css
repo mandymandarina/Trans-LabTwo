@@ -67,10 +67,14 @@ h4 {
  /* menu nav */
  nav {
    background-color:  #dddee0;
- }
- 
+   width: 100%;
+ } 
 .leterMenu {
   color: #f6a800;
+}
+#navWhite {
+  background-color: #dddee0;
+  width: 100%;
 }
  /* fin menu nav */
 
@@ -109,6 +113,9 @@ h4 {
 /* fin css seccion menú */
 
 /* css seccion perfil */
+img {
+  width: 80%;
+}
 #seccionPerfil{
   background-color: #dddee0;
 }
@@ -136,10 +143,10 @@ img {
   background-color: white;
   border: none;
   text-align: center;
-  width: 20em;
+  width: 80%;
   border-radius: 1%;
   margin: 1em;
-  margin-left: 7em; 
+  margin-left: auto; 
 }
 
 .btn-terciary {  
@@ -203,6 +210,7 @@ input {
 #seccionTarifa{
  display: none;
  background-color: #dddee0;
+ margin-top: -2em;
 }
 .seconTarifa {  
   display: inline-flex;
