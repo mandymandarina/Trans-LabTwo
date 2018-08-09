@@ -7,8 +7,9 @@ body {
   margin: auto;
 }
 
-.form-control {  
-  margin-right: 5%;
+.form-control {   
+margin-left: -0.5em;
+margin: 0em;
    
 }
 
@@ -78,17 +79,17 @@ h4 {
  .container-fluid {
    width: 100%;   
  }
- .botonesylactm {
-   width: 100%;
- }
+ 
 .btn-primary{
-  width: 100em;
-  margin:1em;
+  width: 10em;
+  margin: 2em;
+  margin-left: auto;
   background-color: #f6a800;
   border:  #f6a800; 
   text-align: center;    
   border-radius: 0;
   height: 1.5em;
+  display: block;
 }
 .parrFuBt{
   font: 0.7em sans-serif;
@@ -120,8 +121,8 @@ img {
 }
 
 .inPer {
-  width: 15em;
-  margin-left:10em;
+  width: 80%;
+  margin-left: 10%;
   text-align: center;
   background-color: #dddee0;
   border-top: none;

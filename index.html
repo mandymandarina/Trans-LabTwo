@@ -63,88 +63,89 @@
   <!-- fin de seccion login -->
 
   <!-- seccion registrate -->
-  <section id="registerSec">   
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1"></label>
-    <input type="email" id="email" class="form-control" placeholder="Correo electronico" value="">
+  <section id="registerSec">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1"></label>
+        <input type="email" id="email" class="form-control" placeholder="Correo electronico" value="">
 
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1"></label>
-    <input type="password" class="form-control" id="password" placeholder="Contraseña" value="">
-  </div>
-  <button type="button" class="btn btn-secondary" id="register" onclick="registerLog()" type="button" value="REGISTER">Registrar</button>
-  <div class="alertConteiner" id="alertPassword"></div>
-</form>
-</section>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1"></label>
+        <input type="password" class="form-control" id="password" placeholder="Contraseña" value="">
+      </div>
+      <button type="button" class="btn btn-secondary" id="register" onclick="registerLog()" type="button" value="REGISTER">Registrar</button>
+      <div class="alertConteiner" id="alertPassword"></div>
+    </form>
+  </section>
   <!-- fin seccion registrate -->
 
   <!-- seccion menú home -->
   <secction id="seccionMenu">
-    <!-- comienzo container -->
-    <div class="container-fluid">
-      <!-- comienzo row -->
-      <div class="row">
-        <!-- fin de row -->
-        <div class="col-sm 6">
-          <!-- comienzo menu -->
-       
-          <!-- <nav> menu nav comentado por si acaso -->
-            
-          <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <p class="leterMenu"><i class="fas fa-dollar-sign" id="iconPeso"></i> Ver saldo</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <p class="leterMenu"><i class="fas fa-calculator"id="iconCalcu"></i> Calcular Tarifa</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <p class="leterMenu"><i class="fas fa-user-alt" id="iconPerfil"></i> Perfil</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <p class="leterMenu"><i class="fas fa-file-alt"></i> Preguntas Frecuentes</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <p class="leterMenu"><i class="fas fa-arrow-right" id="iconHome"></i>Home</p></a>
-                  </li>
-                </ul>
+  <div class="container-fluid">  
+      <!-- comienzo container -->
+      
+        <!-- comienzo row -->
+        <div class="row">
+          <!-- fin de row -->
+          <div class="col-sm 6">
+            <!-- comienzo menu -->
+         
+            <!-- <nav> menu nav comentado por si acaso -->
+              
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <p class="leterMenu"><i class="fas fa-dollar-sign" id="iconPeso"></i> Ver saldo</p></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <p class="leterMenu"><i class="fas fa-calculator"id="iconCalcu"></i> Calcular Tarifa</p></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <p class="leterMenu"><i class="fas fa-user-alt" id="iconPerfil"></i> Perfil</p></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <p class="leterMenu"><i class="fas fa-file-alt"></i> Preguntas Frecuentes</p></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <p class="leterMenu"><i class="fas fa-arrow-right" id="iconHome"></i>Home</p></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+                  <span class="navbar-toggler-icon"></span>                
+                </button>
+                <p class="navMenu">TRANS-LAB</p>
+              </nav>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
-                <span class="navbar-toggler-icon"></span>                
-              </button>
-              <p class="navMenu">TRANS-LAB</p>
-            </nav>
           </div>
         </div>
-      </div>
-      <!-- fin container -->
-    </div>
-    <seccion id="botonesMenu">
-      <!-- segundo container botones -->
-      <div class="container-fluid">
-        <div class="row" class="botonesylactm">
-          <div class="col-sm 6"></div>
-          <button type="button" class="btn btn-primary" id="firstbSaldo"><p class="parrFuBt">VER SALDO</p></button>
-          <button type="button" class="btn btn-primary" id="secondbTarifa"><p class="parrFuBt">CALCULAR TARIFA</p></button>
-          <button type="button" class="btn btn-primary" id="threebPerfil"><p class="parrFuBt">PERFIL</p></button>
-          <button type="button" class="btn btn-primary" id="fourbHoja"><p class="parrFuBt">PREGUNTAS FRECUENTES</p></button>
         </div>
-      </div>
-  </secction>
-  </seccion>
-  <!-- fin seccion menú home-->
+        <!-- fin container -->    
+        <!-- segundo container botones -->
+        <div class="container" id="botonesMenu">
+          <div class="row">
+            <div class="col-6">
+            <button type="button" class="btn btn-primary" id="firstbSaldo"><p class="parrFuBt">VER SALDO</p></button>
+            <button type="button" class="btn btn-primary" id="secondbTarifa"><p class="parrFuBt">CALCULAR TARIFA</p></button>
+            <button type="button" class="btn btn-primary" id="threebPerfil"><p class="parrFuBt">PERFIL</p></button>
+            <button type="button" class="btn btn-primary" id="fourbHoja"><p class="parrFuBt">PREGUNTAS FRECUENTES</p></button>
+            </div>
+          </div>
+        </div> 
+        </secction>     
+     
+    <!-- fin seccion menú home-->
 
   <!-- seccion perfil -->
   <section id="seccionPerfil">
@@ -166,27 +167,27 @@
             <div id="errorNumber"></div>
             <button type="button" class="btn btn-terciary" onclick="numberCard()" id="firstbCard">AGREGAR TARJETA</button>
             <div class="inEmailSaldo" id="cardSee"></div>
-           </div>
+          </div>
         </div>
       </secction>
     </section>
   </section>
   <!-- fin seccion perfil -->
-   
+
   <!-- seccion ver saldo-->
   <section id="seccionCard" class="muroCard">
     <div>
-  <input type="text" class="inPer" id="inputTarjeta" placeholder="Numero tarjeta" value="">
-  <div class="input-group mb-3">      
-    <select class="form-control" id="listaTarjetas">
-      <option id="optionTarjetas">
-        chose your option
-      </option>
-    </select>
+      <input type="text" class="inPer" id="inputTarjeta" placeholder="Numero tarjeta" value="">
+      <div class="input-group mb-3">
+        <select class="form-control" id="listaTarjetas">
+          <option id="optionTarjetas">
+            chose your option
+          </option>
+        </select>
+      </div>
+      <button type="button" class="botonVerSaldo" id="botonVer">VER SALDO</button>
+      <div class="divSaldo" id="agSaldo"></div>
     </div>
-    <button type="button" class="botonVerSaldo" id="botonVer">VER SALDO</button>
-    <div class="divSaldo" id="agSaldo"></div>
-  </div>
   </section>
   <!-- fin seccion ver saldo -->
 
@@ -196,7 +197,7 @@
       <input type="text" class="inPer" placeholder="Numero de tarjeta" id="numeroTarjetaTwo">
     </div>
     <div class="seconTarifa">
-      <div class="input-group mb-4"> 
+      <div class="input-group mb-4">
         <!--       
         <select class="form-control" id="listaTarifa">
           <option id="optionTarjetas">
@@ -204,12 +205,13 @@
           </option>
         </select>-->
         <select class="form-control" id="listaTarifa">
-            <option value="" disabled selected>Seleccione una Tarifa</option>
-            <option value="760">Horario Alto</option>
-            <option value="680">Horario Medio</option>
-            <option value="630">Horario Bajo</option></select>  
+          <option value="" disabled selected>Seleccione una Tarifa</option>
+          <option value="760">Horario Alto</option>
+          <option value="680">Horario Medio</option>
+          <option value="630">Horario Bajo</option>
+        </select>
       </div>
-      <div class="input-group mb-4">      
+      <div class="input-group mb-4">
         <select class="form-control" id="listaTarjeta">
           <option id="optionTarjetas">
             Seleccione una tarjeta
@@ -217,70 +219,72 @@
         </select>
       </div>
     </div>
-    <div class="btnCalTarifa">      
+    <div class="btnCalTarifa">
       <button type="button" class="botonVerSaldo" id="botonTari" onclick="calculationTaf()">CALCULAR</button>
     </div>
-    <div id="verTarifa" class="divSaldo">      
-  </div>
+    <div id="verTarifa" class="divSaldo">
+    </div>
     <div id="verSalDes" class="divSaldo"></div>
   </secction>
   <!-- fin seccion calcular tarifa -->
 
   <!-- seccion preguntas frecuentes -->
-    
+
   <div class="container-fluid questions" id="sectionQuest">
     <section class="preguntas">
-    <div>
-      <p>Preguntas frecuentes</p>
-    </div>
+      <div>
+        <p>Preguntas frecuentes</p>
+      </div>
     </section>
-    
+
     <nav>
-        <div class="container-fluid questionM">           
-            <p class="reseña">En esta seccion puedes encontrar las respuestas a tus preguntas sobre la tarjeta Bip.</p>
-            <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo">¿Dónde puedo cambiar mi tarjeta bip! portador en caso de falla?</button>
-            <div id="demo" class="collapse">
-                Si tu tarjeta no funciona y tiene daños no atribuibles al usuario, llévala a una Oficina de Servicio al Cliente donde será cambiada por una nueva, sólo si se comprueba la falla. Si la tarjeta dañada tiene saldo, será traspasado en cinco días hábiles.
-            </div>
-          </div>
-          <div class="container-fluid questionM">               
-              <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo1">¿Cómo reviso la historia de los movimientos de mi tarjeta bip!?</button>
-              <div id="demo1" class="collapse">
-                  Revisa las transacciones de tu tarjeta de los últimos 90 días ingresando a la sección “bip! en línea!” 
-              </div>
-            </div>
-            <div class="container-fluid questionM">               
-                <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo2">¿Dónde puedo dar mi opinión o sugerencia acerca de la tarjeta bip!?</button>
-                <div id="demo2" class="collapse">
-                    Tienes dos maneras. La primera es hacerlo por nuestro call center llamando al 800 730 00 73 y marcando la opción 2.
-                </div>
-              </div>      
+      <div class="container-fluid questionM">
+        <p class="reseña">En esta seccion puedes encontrar las respuestas a tus preguntas sobre la tarjeta Bip.</p>
+        <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo">¿Dónde puedo cambiar mi tarjeta bip! portador en caso de falla?</button>
+        <div id="demo" class="collapse">
+          Si tu tarjeta no funciona y tiene daños no atribuibles al usuario, llévala a una Oficina de Servicio al Cliente donde será
+          cambiada por una nueva, sólo si se comprueba la falla. Si la tarjeta dañada tiene saldo, será traspasado en cinco
+          días hábiles.
+        </div>
+      </div>
+      <div class="container-fluid questionM">
+        <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo1">¿Cómo reviso la historia de los movimientos de mi tarjeta bip!?</button>
+        <div id="demo1" class="collapse">
+          Revisa las transacciones de tu tarjeta de los últimos 90 días ingresando a la sección “bip! en línea!”
+        </div>
+      </div>
+      <div class="container-fluid questionM">
+        <button type="button" class="btn btn-primary questPregun" data-toggle="collapse" data-target="#demo2">¿Dónde puedo dar mi opinión o sugerencia acerca de la tarjeta bip!?</button>
+        <div id="demo2" class="collapse">
+          Tienes dos maneras. La primera es hacerlo por nuestro call center llamando al 800 730 00 73 y marcando la opción 2.
+        </div>
+      </div>
   </div>
   <!-- fin seccion preguntas frecuentes -->
 
-  <!-- vinculo firebase -->  
-<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAEQHZNdaH57Z1UXOomddbbxhxbfRubN1c",
-    authDomain: "trans-lab-a8a00.firebaseapp.com",
-    databaseURL: "https://trans-lab-a8a00.firebaseio.com",
-    projectId: "trans-lab-a8a00",
-    storageBucket: "trans-lab-a8a00.appspot.com",
-    messagingSenderId: "1087920020259"
-  };
-  firebase.initializeApp(config);
-</script>
-<!-- vinculo jquery -->
+  <!-- vinculo firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAEQHZNdaH57Z1UXOomddbbxhxbfRubN1c",
+      authDomain: "trans-lab-a8a00.firebaseapp.com",
+      databaseURL: "https://trans-lab-a8a00.firebaseio.com",
+      projectId: "trans-lab-a8a00",
+      storageBucket: "trans-lab-a8a00.appspot.com",
+      messagingSenderId: "1087920020259"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- vinculo jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-    <!-- vinculo bootstrap -->
+  <!-- vinculo bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-    <!-- viculo hojas js -->
+  <!-- viculo hojas js -->
   <script src="src/js/main.js"></script>
   <script src="src/js/data.js"></script>
 </body>

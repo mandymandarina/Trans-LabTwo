@@ -104,7 +104,7 @@ btnVer.addEventListener('click', (event) => {
 });
 
 const renderInfo = (data) => {
-  agSaldo.innerHTML = data.saldoTarjeta;
+  agSaldo.innerHTML =  `<div class="costototal">SALDO</div>$${data.saldoTarjeta}`;
 }
 
 // funcion lista tarjetas en seccion ver saldo
