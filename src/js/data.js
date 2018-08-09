@@ -39,6 +39,10 @@ function login() {
   firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
     .then(() => {
       console.log("Usuario con login exitoso");
+      if (passwordValue == num || passwordValue.length <= 8  ){          
+    }else{
+      return alert("La contarseña tiene mas de 8 digitos")      
+    }
     })
     .catch((error) => {
       console.log("Error de firebase > " + error.code);
@@ -49,15 +53,38 @@ function login() {
 function registerLog() {
   const emailValue = email.value;
   const passwordValue = password.value;
-  firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+  if (passwordValue.length <= 8 ){
+    firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
     .then(() => {
       console.log("Usuario registrado");
     })
     .catch((error) => {
       console.log("Error de firebase > " + error.code);
       console.log("Error de firebase, mensaje > " + error.message);
+    });        
+  }else{
+    return alert("La contarseña tiene mas de 8 digitos")      
+  }
+};
+
+
+function registerLog() {
+  const emailValue = email.value;
+  const passwordValue = password.value;
+  firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+    .then(() => {
+      console.log("Usuario registrado");
+      if (passwordValue.length <= 8 ){          
+      }else{
+        return alert("La contarseña tiene mas de 8 digitos")      
+      }
+    })
+    .catch((error) => {
+      console.log("Error de firebase > " + error.code);
+      console.log("Error de firebase, mensaje > " + error.message);
     });
 };
+
 
 function numberCard() {
   const cardText = agCard.value;
