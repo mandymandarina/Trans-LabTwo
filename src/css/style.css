@@ -62,6 +62,11 @@ h4 {
   background-color: #f6a800;
 }
  /* css seccion registro */
+
+ .sectionLogin {
+  background-color: #3e3f41;
+  height: 100vh;
+ }
  #registerSec {
    display: none; 
    margin: auto;  
