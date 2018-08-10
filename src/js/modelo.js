@@ -1,7 +1,7 @@
 window.calculationTaf = () => {
   let numTarjeta = numeroTarjetaTwo.value;
   let numListTarjeta = listaTarjeta.value;
-  fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta || numListTarjeta}`)
+  fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta || numListTarjeta}`)
     .then(response => response.json())
     .then(data => {
       console.log(data);

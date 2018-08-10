@@ -209,7 +209,7 @@ select.addEventListener('change',
  function calculationTaf() {
   let numTarjeta = document.getElementById('numeroTarjetaTwo').value;
   let numListTarjeta = document.getElementById('listaTarjeta').value;
-  fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta || numListTarjeta}`)
+  fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${numTarjeta || numListTarjeta}`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
