@@ -2,7 +2,7 @@
 body {
   background-color: rgb(64, 65, 67);
   text-align: center; 
-  padding: 10px;
+  padding: 0;
   margin: auto;  
 }
 
@@ -47,6 +47,13 @@ h4 {
   size: 13px;
 }
 
+.inputLogin {
+  padding: 5% 10%;
+}
+
+#twoInputLogin{
+  margin-top: -3em;
+}
 .navbar{
   background-color: #f6a800;
 }
@@ -80,7 +87,11 @@ h4 {
  /* css secion menú */
 
  .menuHome {
-  padding-bottom: 100%;     
+  padding-bottom: 60%;     
+ }
+
+ #botonesMenu{
+   padding: 35% 5%;
  }
  
 .btn-primary{
@@ -101,6 +112,8 @@ h4 {
 #seccionMenu {
   display: none;
   background-color: #dddee0;
+  padding: 0;
+  margin: auto;
 }
 .flex-column {
   background-color: white;

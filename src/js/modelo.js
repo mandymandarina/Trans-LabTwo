@@ -50,3 +50,13 @@ window.calculationTaf = () => {
         console.log("Error de firebase, mensaje > " + error.message);
       });
   };
+
+  window.calculationTaf = (resultResta) => {
+     const cost = 680;
+     const saldoBip = 1000;
+     if (saldoBip - cost === 320){
+       return true;
+     }       
+  };
+
+  

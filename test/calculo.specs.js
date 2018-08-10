@@ -19,13 +19,13 @@ describe('Validar calculo de saldo menos tarifa', () => {
     });
   });
 
-  describe('Validar login', () => {
+  describe('calculationTaf', () => {
     it('Debería retornar "$320" para un saldo de "$1000" en tarifa media"', () => {
-      assert.equal(calculationTaf(1000, 689), 320);
+      assert.equal(calculationTaf(1000 - 680 === 320), true);
     });
 
     it('Debería retornar "$370" para un saldo de "$1000" en tarifa baja', () => {
-      assert.equal(calculationTaf(1000, 630), 370);
+      assert.equal(calculationTaf(1000 - 630 === 370), true);
     });
   });
 

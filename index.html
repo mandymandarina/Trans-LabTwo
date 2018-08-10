@@ -32,19 +32,23 @@
             </div>
     </header>
     <!-- aqui login -->
+    <section class="inputLogin">
     <form>
+     
       <div class="form-group">
         <label for="exampleInputEmail1"></label>
         <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico" value="">
 
       </div>
-      <div class="form-group">
+      <div class="form-group" id="twoInputLogin">
         <label for="exampleInputPassword1"></label>
         <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" value="">
       </div>
+    
       <button type="button" class="btn btn-secondary" onclick="login()" id="botonLogin">Iniciar sesión</button>
       <div class="alertConteiner" id="alertPassword"></div>
     </form>
+  </section>
     <!-- comentario de olvidar contraseña -->
     <p id="fpass">Olvidaste tu contaseña</p>
     <!-- fin de login -->
@@ -82,7 +86,7 @@
 
   <!-- seccion menú home -->
   <secction id="seccionMenu">
-  <div class="container-fluid menuHome">  
+  
       <!-- comienzo container -->
       
         <!-- comienzo row -->
@@ -142,7 +146,7 @@
             <button type="button" class="btn btn-primary" id="fourbHoja"><p class="parrFuBt">PREGUNTAS FRECUENTES</p></button>
             </div>
           </div>
-        </div> 
+        
         </secction>     
      
     <!-- fin seccion menú home-->

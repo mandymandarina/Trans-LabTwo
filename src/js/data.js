@@ -204,8 +204,8 @@ select.addEventListener('change',
 
  // calcular saldo restando tarifa
 
- /*
- esta funcion si va
+ 
+ // esta funcion si va
  function calculationTaf() {
   let numTarjeta = document.getElementById('numeroTarjetaTwo').value;
   let numListTarjeta = document.getElementById('listaTarjeta').value;
@@ -231,8 +231,8 @@ select.addEventListener('change',
       console.error("ERROR > " + error.stack);
     });       
     
-}
-*/
+};
+
 
     
   
