@@ -1,14 +1,14 @@
 /* css del login */
 body {
-  background-color: rgb(64, 65, 67);
+  background-color: #dddee0;
   text-align: center; 
   padding: 0;
   margin: auto;  
 }
 
 .form-control {   
-margin-left: -0.5em;
-margin: 0em;
+margin: 2% 15%;
+width: 70%;
    
 }
 
@@ -29,17 +29,21 @@ h4 {
 }
 
 .btn-secondary {  
-  width: 10em;
-  margin-top: 1em;  
+  width: 70%;
+  margin-top: -3.7vh;  
   background-color: #f6a800;
   border:  #f6a800;
-  margin-left: 0em;
+ 
  }
 
  .nav-item{
   text-align: justify;
  }
  /* fin css login */
+ #sectionLogin {
+   background-color: #3e3f41;
+   height: 100vh;
+ }
  .navMenu {  
   color: white;
   text-align: center;
@@ -124,11 +128,12 @@ h4 {
 /* fin css seccion menú */
 
 /* css seccion perfil */
-img {
+img{
   width: 80%;
 }
 #seccionPerfil{
   background-color: #dddee0;
+  display: none;
 }
 .cabeza{
   background-color: #f6a800;
@@ -140,8 +145,8 @@ img {
 
 .inPer {
   width: 80%;
-  margin-left: 10%;
-  text-align: center;
+  
+  text-align: left;
   background-color: #dddee0;
   border-top: none;
   border-left: none;
@@ -154,10 +159,9 @@ img {
   background-color: white;
   border: none;
   text-align: center;
-  width: 80%;
-  border-radius: 1%;
-  margin: 1em;
-  margin-left: auto; 
+  width: 45%;
+  border-radius: 1%; 
+  margin: 10% auto; 
 }
 
 .btn-terciary {  
@@ -177,19 +181,18 @@ input {
   margin: 2em;
 }
 
-#seccionPerfil{
-  display: none;
-}
 /* fin css seccion perfil */
 
 /* css seccion ver saldo */
+.blockWall{
+  height: 90vh;
+}
 .muroCard {
   background-color: #dddee0;  
 }
 #seccionCard {
   display: none;
-  background-color: #dddee0;
-  margin-top: -2em;
+  background-color: #dddee0;  
 }
 .botonVerSaldo{
   background-color: #F6A800;
@@ -197,6 +200,8 @@ input {
   width: 45%;
   padding: 0%;
   font-size: 16px;
+  margin-top: 10%;
+  border: none;
 }
 .costototal{
   background-color: #3e3f41;
@@ -220,21 +225,16 @@ input {
 /* css seccion tarifa */
 #seccionTarifa{
  display: none;
- background-color: #dddee0;
- margin-top: -2em;
+ background-color: #dddee0; 
 }
-.seconTarifa {  
-  display: inline-flex;
-  width: 35em;
-  margin-left: -3em;
+.form {
+  width: 45%;
 }
-.mb-4 {
-  width: 15em;
-  margin:1em;  
-}
-.inPero{
-  text-align: center;
-  width: 30em;
+
+/* calcular saldo */
+
+.seconTarifa { 
+  margin: 3% 1%;  
 }
 /* fin css seccion tarifa */
 

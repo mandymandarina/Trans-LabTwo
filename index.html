@@ -62,19 +62,19 @@
       </h5>
     </footer>
     </div>
-    </div>
+    </div>    
   </section>
   <!-- fin de seccion login -->
 
-  <!-- seccion registrate -->
-  <section id="registerSec">
+  <!-- seccion registrate -->  
+    <section class="inputLogin" id="registerSec">
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1"></label>
         <input type="email" id="email" class="form-control" placeholder="Correo electronico" value="">
 
       </div>
-      <div class="form-group">
+      <div class="form-group" id="twoInputLogin">
         <label for="exampleInputPassword1"></label>
         <input type="password" class="form-control" id="password" placeholder="Contraseña" value="">
       </div>
@@ -93,10 +93,8 @@
         <div class="row">
           <!-- fin de row -->
           <div class="col-sm 6">
-            <!-- comienzo menu -->
-         
-            <!-- <nav> menu nav comentado por si acaso -->
-              
+            <!-- comienzo menu -->         
+            <!-- menu nav comentado por si acaso -->              
             <div class="pos-f-t">
               <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4">
@@ -145,8 +143,8 @@
             <button type="button" class="btn btn-primary" id="threebPerfil"><p class="parrFuBt">PERFIL</p></button>
             <button type="button" class="btn btn-primary" id="fourbHoja"><p class="parrFuBt">PREGUNTAS FRECUENTES</p></button>
             </div>
-          </div>
-        
+          </div> 
+          </div>       
         </secction>     
      
     <!-- fin seccion menú home-->
@@ -180,7 +178,7 @@
 
   <!-- seccion ver saldo-->
   <section id="seccionCard" class="muroCard">
-    <div>
+    <div class="blockWall">
       <input type="text" class="inPer" id="inputTarjeta" placeholder="Numero tarjeta" value="">
       <div class="input-group mb-3">
         <select class="form-control" id="listaTarjetas">
@@ -200,28 +198,18 @@
     <div class="tarifa">
       <input type="text" class="inPer" placeholder="Numero de tarjeta" id="numeroTarjetaTwo">
     </div>
-    <div class="seconTarifa">
-      <div class="input-group mb-4">
-        <!--       
-        <select class="form-control" id="listaTarifa">
-          <option id="optionTarjetas">
-            chose your option
-          </option>
-        </select>-->
-        <select class="form-control" id="listaTarifa">
+    <div class="seconTarifa">      
+        <select class="form" id="listaTarifa">
           <option value="" disabled selected>Seleccione una Tarifa</option>
           <option value="760">Horario Alto</option>
           <option value="680">Horario Medio</option>
           <option value="630">Horario Bajo</option>
-        </select>
-      </div>
-      <div class="input-group mb-4">
-        <select class="form-control" id="listaTarjeta">
+        </select>     
+        <select class="form" id="listaTarjeta">
           <option id="optionTarjetas">
             Seleccione una tarjeta
           </option>
-        </select>
-      </div>
+        </select>     
     </div>
     <div class="btnCalTarifa">
       <button type="button" class="botonVerSaldo" id="botonTari" onclick="calculationTaf()">CALCULAR</button>
