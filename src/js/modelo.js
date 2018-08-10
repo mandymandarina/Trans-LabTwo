@@ -51,6 +51,7 @@ window.calculationTaf = () => {
       });
   };
 
+  /*
   window.calculationTaf = (resultResta) => {
      const cost = 680;
      const saldoBip = 1000;
@@ -58,5 +59,5 @@ window.calculationTaf = () => {
        return true;
      }       
   };
-
+*/
   
