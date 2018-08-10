@@ -33,12 +33,12 @@
     </header>
     <!-- aqui login -->
     <section class="inputLogin">
-    <form>
-     
+    <form>     
       <div class="form-group">
         <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico" value="">
-
+        <input type="email" id="inputEmail" class="form-control" placeholder="Correo electronico" value="">
+          
+         
       </div>
       <div class="form-group" id="twoInputLogin">
         <label for="exampleInputPassword1"></label>
@@ -165,7 +165,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="inEmailSaldo" id="agEmail"></div>
-            <input type="text" class="inPer" id="agCard" placeholder="Numero de tarjeta">
+            <input type="text" class="inPer" id="agCard" placeholder="Ingrese número de tarjeta">
             <div id="errorNumber"></div>
             <button type="button" class="botonVerSaldo" onclick="numberCard()" id="firstbCard">AGREGAR TARJETA</button>
             <div class="inEmailSaldo" id="cardSee"></div>
@@ -179,11 +179,11 @@
   <!-- seccion ver saldo-->
   <section id="seccionCard" class="muroCard">
     <div class="blockWall">
-      <input type="text" class="inPer" id="inputTarjeta" placeholder="Numero tarjeta" value="">
+      <input type="text" class="inPer" id="inputTarjeta" placeholder="Ingrese número de tarjeta" value="">
       <div class="input-group mb-3">
         <select class="form-control" id="listaTarjetas">
           <option id="optionTarjetas">
-            chose your option
+            Numero de tarjeta
           </option>
         </select>
       </div>
@@ -196,18 +196,18 @@
   <!-- seccion calcular tarifa -->
   <secction id="seccionTarifa">
     <div class="tarifa">
-      <input type="text" class="inPer" placeholder="Numero de tarjeta" id="numeroTarjetaTwo">
+      <input type="text" class="inPer" placeholder="Ingrese número de tarjeta" id="numeroTarjetaTwo">
     </div>
     <div class="seconTarifa">      
         <select class="form" id="listaTarifa">
-          <option value="" disabled selected>Seleccione una Tarifa</option>
+          <option value="" disabled selected>Seleccione Tarifa</option>
           <option value="760">Horario Alto</option>
           <option value="680">Horario Medio</option>
           <option value="630">Horario Bajo</option>
         </select>     
         <select class="form" id="listaTarjeta">
           <option id="optionTarjetas">
-            Seleccione una tarjeta
+            Seleccione tarjeta
           </option>
         </select>
       

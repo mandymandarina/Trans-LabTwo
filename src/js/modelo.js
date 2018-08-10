@@ -35,8 +35,8 @@ window.calculationTaf = () => {
   }; 
 
   window.login = () => {
-    const emailValue = inputEmail.value;
-    const passwordValue = inputPassword.value;
+    const emailValue = document.getElementById('inputEmail').value;
+    const passwordValue = document.getElementById('inputPassword').value;
     firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
       .then(() => {
         console.log("Usuario con login exitoso");

@@ -7,9 +7,8 @@ body {
 }
 
 .form-control {   
-margin: 2% 15%;
-width: 70%;
-   
+margin: 3% 15%;
+width: 70%;   
 }
 
 #imagen {  
@@ -30,7 +29,7 @@ h4 {
 
 .btn-secondary {  
   width: 70%;
-  margin-top: -3.7vh;  
+  margin-top: -3vh;  
   background-color: #f6a800;
   border:  #f6a800;
  
@@ -43,6 +42,14 @@ h4 {
  #sectionLogin {
    background-color: #3e3f41;
    height: 100vh;
+ }
+
+ h5{
+   color: white;
+ }
+
+ #fpass{
+   color: white;
  }
  .navMenu {  
   color: white;
