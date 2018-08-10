@@ -33,6 +33,10 @@ window.onload = () => {
   });
 
 };
+
+// funcion para logear
+/*
+esta funcion si va
 function login() {
   const emailValue = inputEmail.value;
   const passwordValue = inputPassword.value;
@@ -49,7 +53,8 @@ function login() {
       console.log("Error de firebase, mensaje > " + error.message);
     });
 }
-
+*/
+// funcion para registrarse
 function registerLog() {
   const emailValue = email.value;
   const passwordValue = password.value;
@@ -67,25 +72,7 @@ function registerLog() {
   }
 };
 
-
-function registerLog() {
-  const emailValue = email.value;
-  const passwordValue = password.value;
-  firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
-    .then(() => {
-      console.log("Usuario registrado");
-      if (passwordValue.length <= 8 ){          
-      }else{
-        return alert("La contarseña tiene mas de 8 digitos")      
-      }
-    })
-    .catch((error) => {
-      console.log("Error de firebase > " + error.code);
-      console.log("Error de firebase, mensaje > " + error.message);
-    });
-};
-
-
+// funcion para subir numero de tarjetas a firebase
 function numberCard() {
   const cardText = agCard.value;
   if (cardText === '') {
@@ -117,8 +104,9 @@ firebase.database().ref('users')
 
   
 // fetch de api para seccion ver saldo
-const btnVer = document.getElementById('botonVer')
-btnVer.addEventListener('click', (event) => {
+/*
+esta funcion si va
+function cashCardAp() {
   let id = document.getElementById('inputTarjeta').value;
   console.log(id);
   fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${id}`)
@@ -126,12 +114,11 @@ btnVer.addEventListener('click', (event) => {
     .then(data => {
       console.log(data);
       renderInfo(data);
-    })
-  btnVer.value = '';
-});
-
+    });
+};
+*/
 const renderInfo = (data) => {
-  agSaldo.innerHTML =  `<div class="costototal">SALDO</div>$${data.saldoTarjeta}`;
+  agSaldo.innerHTML =  `<div class="costototal">SALDO</div>${data.saldoTarjeta}`;
 }
 
 // funcion lista tarjetas en seccion ver saldo
@@ -155,7 +142,6 @@ firebase.database().ref('Cards')
   });
 
 // funcion lista de tarifas para que se vean en el select
-
 var select = document.getElementById('listaTarifa');
 select.addEventListener('change',
   function(){
@@ -216,8 +202,10 @@ select.addEventListener('change',
   });
   */
 
- // llamar tarifa y numero de tarjeta
+ // calcular saldo restando tarifa
 
+ /*
+ esta funcion si va
  function calculationTaf() {
   let numTarjeta = document.getElementById('numeroTarjetaTwo').value;
   let numListTarjeta = document.getElementById('listaTarjeta').value;
@@ -231,7 +219,9 @@ select.addEventListener('change',
       // calculo de saldo menos tarifa
       const comando = /(\d+)/g;
       const saldoTa = infoData.saldoTarjeta.match(comando)
+      console.log(saldoTa);
       const saldoTar = parseInt(saldoTa[0] + saldoTa[1]);
+      console.log(saldoTar);
       const selectorSal = document.getElementById('listaTarifa').value;      
       const totalCalculo = saldoTar - selectorSal;
       verSalDes.innerHTML = `<div class="costototal">SALDO FINAL</div>$ `+totalCalculo;           
@@ -242,6 +232,7 @@ select.addEventListener('change',
     });       
     
 }
+*/
 
     
   
